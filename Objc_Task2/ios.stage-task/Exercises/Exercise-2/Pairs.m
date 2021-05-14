@@ -3,6 +3,9 @@
 @implementation Pairs
 
 - (NSInteger)countPairs:(NSArray <NSNumber *> *)array number:(NSNumber *)number {
+	if (array.count < 2) {
+		return 0;
+	}
 	NSInteger differsCount = 0;
 	for (NSUInteger i = 0; i < array.count-1; i++) {
 		NSNumber *a = [array objectAtIndex:i];

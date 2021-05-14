@@ -20,7 +20,7 @@
 		}
 	}
 	[numbers sortUsingSelector:@selector(compare:)];
-	[strings sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+	[strings sortUsingSelector:@selector(compare:)];
 	if (strings.count && numbers.count) {
 		return @[ [numbers copy], [strings copy] ];
 	}
